@@ -1,0 +1,6 @@
+# Makefile.deps created Tue Feb  3 18:29:22 PST 2015
+debug.o: debug.c debug.h yyextern.h
+stack.o: stack.c stack.h bigint.h debug.h
+bigint.o: bigint.c bigint.h debug.h
+token.o: token.c token.h debug.h
+main.o: main.c bigint.h debug.h stack.h token.h yyextern.h
